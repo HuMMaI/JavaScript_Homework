@@ -1,0 +1,225 @@
+body{
+    background-color: #ececec;
+}
+
+.main{
+    width: 450px;
+    height: 500px;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #008309;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.header >span{
+    color: white;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.regForm{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.genderBtn{
+    display: flex;
+    flex-direction: row;
+}
+
+#btnMan, #btnWoman{
+    margin: 0;
+}
+
+#fieldFirstName, #fieldSecondName, #fieldEmail, #position, #btn{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #c9c9c9;    
+    border-radius: 4px;
+    padding: 0;
+}
+
+#btn{
+    background-color: #008309;
+    width: 400px;
+    font-size: 1.25em;
+    color: white;
+}
+
+.checkEl{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genderBtn >p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#btnMan, #btnWoman{
+    border-color: #c9c9c9;
+    cursor: pointer;
+}
+
+#fieldFirstName:hover, #fieldSecondName:hover, #fieldEmail:hover, #position:hover, #btn:hover{
+    border-color: #868686;
+}
+
+.pMan{
+    width: 47px;
+}
+
+.pWoman{
+    width: 87px;
+    margin-left: 15px;
+}
+
+#check{
+    margin: 0;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+#btn, #position{
+    cursor: pointer;
+}
+
+#btn[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input, select{
+    outline: 0;
+}
+
+#fieldFirstName:focus, #fieldSecondName:focus, #fieldEmail:focus, #position:focus{
+    box-shadow: 0px 0px 15px 0px #c9c9c9;
+}
+
+.account{
+    width: 500px;
+    height: 450px;
+    border: 1px solid #008309;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accHeader{
+    width: 100%;
+    height: 150px;
+    background-color: #008309;
+}
+
+.accBox{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+}
+
+.accFooter{
+    width: 100%;
+    height: 50px;
+    background-color: #008309;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 125px;
+    z-index: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*    border-bottom: 1px solid #c9c9c9;*/
+}
+
+.info >img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 76px;
+    background-color: dodgerblue;
+}
+
+#nameBlock{
+    font-weight: 600;
+}
+
+.info >span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#btnBlock{
+    width: 100%;
+    height: 47px;
+    border-top: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#btnSignOut{
+    height: 30px;
+    background-color: white;
+    color: #008309;
+    border: 1px solid #008309;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btnSignOut:hover{
+    box-shadow: 0px 0px 5px 0px #008309;
+}
+
+.accFooter >img{
+    height: 30px;
+    width: 30px;
+    background-color: #008309;
+    margin-left: 5px;
+}
+
+.accFooter >img:hover{
+    box-shadow: 0px 0px 5px 0px black;
+}

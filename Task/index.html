@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <span>Sign In</span>
+        </div>
+        
+        <div class="box">
+            <form class="regForm">
+               <label>
+                   <span>First name</span>
+                   <br>
+                   <input type="text" placeholder="type here..." id="fieldFirstName" onclick="inputChanger(this)" required>
+               </label> 
+           
+               <label>
+                   <span>Second name</span>
+                   <br>
+                   <input type="text" placeholder="type here..." id="fieldSecondName" required>
+               </label>
+           
+               <label>
+                   <span>Email address</span>
+                   <br>
+                   <input type="email" placeholder="type here..." id="fieldEmail" required>
+               </label>
+       
+               <label class="genderBtn">
+                   <p class="pMan"><input name="gender" type="radio" value="man" id="btnMan">man</p>
+                   <p class="pWoman"><input name="gender" type="radio" value="woman" id="btnWoman">woman</p>
+               </label>
+       
+               <label>
+                   <span>Position</span>
+                   <br>
+                   <select name="" id="position">
+                       <option disabled selected>Choose...</option>
+                       <option value="Frontend">Frontend</option>
+                       <option value="Backend">Backend</option>
+                       <option value="QC/QA">QC/QA</option>
+                   </select>
+               </label>
+               
+               <p class="checkEl"><input type="checkbox" id="check" onchange="document.getElementById('btn').disabled = !this.checked;">I agree all statements in Terms of service</p>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <input type="submit" value="Sign In" id="btn" disabled>
+        </div>
+    </div>
+    
+    <div class="account">
+        <div class="info">
+            <img src="" alt="profilePicture" id="profileLogo">
+            <span id="nameBlock"></span>
+            <span id="mailBlock"></span>
+            <span id="posBlock"></span>
+            <div id="btnBlock">
+                <input type="submit" value="Sign Out" id="btnSignOut">
+            </div>
+        </div>
+       
+        <div class="accHeader">
+            
+        </div>
+        
+        <div class="accBox">
+            
+        </div>
+        
+        <div class="accFooter">
+            <img src="facebookLogo.jpg" alt="facebookLogo" onclick="location.href='https://www.facebook.com'">
+            <img src="githubLogo.png" alt="githubLogo" onclick="location.href='https://github.com'">
+            <img src="linkedinLogo.png" alt="linkedinLogo" onclick="location.href='https://www.linkedin.com'">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
